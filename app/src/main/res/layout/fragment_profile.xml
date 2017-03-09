@@ -1,0 +1,98 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.lautaro.platzigram.views.fragments.ProfileFragment">
+
+    <android.support.design.widget.AppBarLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/appBarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingBarProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:statusBarScrim="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="200dp"
+                android:paddingBottom="20dp"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/usernameProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uriel Ramirez"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textname_username_profile" />
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarProfile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"></android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pictureProfileRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dimen_imagecircle_profile"
+        android:layout_height="@dimen/dimen_imagecircle_profile"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/margintop_circleimage"
+        android:elevation="@dimen/elevation_imagecircle_profile"
+        android:src="@drawable/image"
+        app:dependTargetY="@dimen/limitY_circleimage_profile"
+        app:dependType="y"
+        app:dependsOn="@id/appBarProfile"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:targetHeight="@dimen/width_imagecircle_profile"
+        app:targetWidth="@dimen/width_imagecircle_profile"
+        app:targetX="@dimen/activity_vertical_margin"
+        app:targetY="@dimen/margintoptoolbar_circleimage_profile" />
+
+    <TextView
+        android:id="@+id/usernameToolbarProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginleft_usernametoolbar_profile"
+        android:layout_marginTop="@dimen/margintop_usernametoolbar_profile"
+        android:alpha="0"
+        android:elevation="@dimen/elevation_imagecircle_profile"
+        android:gravity="center_vertical"
+        android:text="Uriel Ramirez"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_username_toolbar_profile"
+        app:dependTargetY="@dimen/limitY_usernametoolbar_profile"
+        app:dependType="y"
+        app:dependsOn="@id/appBarProfile"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:targetAlpha="1"
+        app:targetY="@dimen/margintoptoolbar_usernametoolbar_profile" />
+
+</android.support.design.widget.CoordinatorLayout>

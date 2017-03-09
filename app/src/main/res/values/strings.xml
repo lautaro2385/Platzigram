@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Platzigram</string>
+    <string name="title_activity_prueba">PruebaActivity</string>
+    <string name="hint_username">Nombre de usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="text_button_login">Login</string>
+    <string name="dont_have_account">¿No tienes cuenta?,</string>
+    <string name="create_here">Crea una aquí</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_name">nombre</string>
+    <string name="hint_user">Usuario</string>
+    <string name="hint_confirm_password">Confirmar contraseña</string>
+    <string name="text_button_createaccount">Unete</string>
+    <string name="toolbar_title_createaccount">Crear Cuenta</string>
+    <string name="firstword_card">Hace</string>
+    <string name="tab_search">Buscar</string>
+    <string name="tab_profile">Yo</string>
+    <string name="tab_home">Home</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="like_text">me gusta</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dolor turpis, dignissim id ornare eu, ultricies vel lorem. Integer ultricies odio ultrices mi porttitor, at dictum neque congue. Aliquam nibh tellus, posuere sit amet blandit eget, tincidunt quis leo. Ut venenatis, eros non rhoncus tempus, tortor lectus malesuada est, eu sollicitudin ipsum quam sed massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ac dui nec libero ornare fermentum at vel justo. Pellentesque sed laoreet eros. Nulla eros leo, gravida id mattis non, ullamcorper quis tortor. Cras varius id enim id sagittis. Suspendisse pellentesque fringilla ipsum at volutpat. Suspendisse tincidunt eget elit ut placerat. Etiam quis diam pretium tellus porta condimentum ac eu dui. Praesent suscipit aliquam quam, sed consequat arcu venenatis quis. Morbi rutrum finibus lorem ut interdum. Morbi imperdiet velit eget tellus fringilla convallis.</string>
+    <string name="transitionNameImageProfile">transitionImageProfile</string>
+    <string name="search_hint">Buscar prueba</string>
+</resources>
